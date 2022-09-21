@@ -13,7 +13,7 @@ from pybricks.media.ev3dev import SoundFile, ImageFile
 
 
 # Create your objects here.
-ev3 = EV3Brick()
+t = EV3Brick()
 
 
 # Write your program here.
@@ -22,10 +22,18 @@ ev3 = EV3Brick()
 #ev3.speaker.beep()
 
 #改變主機燈光顏色
-#ev3.light.on(Color.RED)
+#t.light.on(Color.YELLOW)
 
 #等待一秒鐘
 #wait(1000)
 
 #關閉燈光
 #ev3.light.off()
+
+#使用螢幕 screen.draw_text(x, y, text, text_color=Color.BLACK, background_color=None)
+#t.screen.draw_text(50, 50, "text", text_color=Color.BLACK, background_color=None)
+#wait(5000)
+
+#使用 Touch sensor touch_1 = TouchSensor(Port.S1)
+#touch_1 = TouchSensor(Port.S1)
+#print(touch_1.pressed())
